@@ -1,14 +1,14 @@
 diff --git a/configure b/configure
-index 0ab442f..12142c6 100755
+index e5590d9..1aaf7f6 100755
 --- a/configure
 +++ b/configure
-@@ -382,6 +382,11 @@ include = "/home/rustbuild/root64/include"
+@@ -428,6 +428,11 @@ include = "/home/rustbuild/root64/include"
  rustc-flags = "-l static=ssl -l static=crypto -l dl -L /home/rustbuild/root32/lib"
  root = "/home/rustbuild/root32"
  include = "/home/rustbuild/root32/include"
 +
 +[target.arm-unknown-linux-gnueabihf.openssl]
-+rustc-flags = "-l static=crypto -l static=crypto -l dl -L /usr/lib/arm-linux-gnueabihf"
++rustc-flags = "-l static=ssl -l static=crypto -l dl -L /usr/lib"
 +root = "/usr"
 +include = "/usr/include"
  EOF
